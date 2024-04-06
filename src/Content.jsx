@@ -29,6 +29,8 @@ const MainContent = () => {
 			<button id="copy1" onclick="copyToClipboardOne()">copy</button>
 			<button id="copy2" onclick="copyToClipboardTwo()">copy</button>
 		</div>
+		<h3>Made By Derrick Develops</h3>
+		<div className="Links"></div>
 		</div>
     )
 }
