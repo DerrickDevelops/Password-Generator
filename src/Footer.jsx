@@ -3,12 +3,12 @@ function Footer() {
 
     const styles = {
         fontSize: "1.5rem",
-        paddingTop: "1rem"
+        opacity: "75%"
     }
 
     return(
         <footer>
-            <h3>Made By Derrick Develops</h3>
+            <h3 style={styles}>Made By Derrick Develops</h3>
         </footer>
     )
 }
