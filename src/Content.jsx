@@ -11,12 +11,12 @@ const MainContent = () => {
 			<h2>Have a choice of 2 secure passwords to protect your privacy</h2>
 		</div>
 				<div className="passwordlength">
-				<h3 className="pass_text">Password length</h3>
+				<h3 className="pass-text">Password length</h3>
 			<button id="decrease" onclick="decrease()">-</button>
 			<span id="lengthinput">0</span>
 			<button id="increase" onclick="increase()">+</button>
 		</div>
-		<div className="btn">
+		<div className="toggle-btns">
 			<button id="button" onclick="generatePass()">Generate password</button>
 			<button id="clear" onclick="clearInputField()">Clear</button>
 		</div>

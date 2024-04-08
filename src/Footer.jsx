@@ -3,7 +3,8 @@ function Footer() {
 
     const styles = {
         fontSize: "1.5rem",
-        opacity: "75%"
+        opacity: "75%",
+        textAlign: "center"
     }
 
     const links = {

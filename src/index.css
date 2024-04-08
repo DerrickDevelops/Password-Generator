@@ -15,15 +15,61 @@
 }
 
 * {
-  
+  /* border: 2px solid hsla(0, 100%, 50%, 0.178); */
 }
 
 body {
   margin: 0;
-  display: flex;
+  display: grid;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: #d9dcd6;
+}
+
+.heading {
+  color: #3A7CA5;
+}
+
+.heading span {
+  color: #16425B;
+}
+
+.subheading {
+  font-size: 0.8rem;
+}
+
+.passwordlength {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass-text {
+  padding-right: 5rem;
+}
+
+.toggle-btns {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.passwords {
+  display: flex;
+  justify-content: center;
+  gap: 2rem
+}
+
+.passwords input {
+  height: 2rem;
+  width: 12rem;
+  padding: 0 1rem;
+  margin: 3rem 0;
+  border-radius: 5px;
+  border: none;
+  background: #f9f9f9;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
 
 h1 {
