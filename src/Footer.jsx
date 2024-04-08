@@ -2,20 +2,22 @@
 function Footer() {
 
     const styles = {
-        fontSize: "1.5rem",
-        opacity: "75%",
-        textAlign: "center"
+        fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
+        marginTop: "2.5rem",
+        color: "#6c757d",
+        textAlign: "center",
     }
 
     const links = {
-        fontSize: "2rem",
+        fontSize: "clamp(1.7rem, 3vw, 1rem",
         display: "flex",
         justifyContent: "center",
-        gap: "2rem"
+        gap: "2rem",
+        marginTop: "1.5rem"
     }
 
     const linkTag = {
-        color: "#213547",
+        color: "#6c757d",
         opacity: "75%"
     }
 

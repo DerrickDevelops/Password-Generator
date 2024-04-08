@@ -17,7 +17,7 @@ const MainContent = () => {
 			<button id="increase" onclick="increase()">+</button>
 		</div>
 		<div className="toggle-btns">
-			<button id="button" onclick="generatePass()">Generate password</button>
+			<button id="generate-btn" onclick="generatePass()">Generate password</button>
 			<button id="clear" onclick="clearInputField()">Clear</button>
 		</div>
 

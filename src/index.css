@@ -5,66 +5,85 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
+  padding: 20px 20px;
 }
 
 * {
   /* border: 2px solid hsla(0, 100%, 50%, 0.178); */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 body {
   display: grid;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
-  background: #F1FAEE;
+  background: #EBEBEB;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1;
-  text-align: left;
+  line-height: 1.1;
 }
 
 .heading {
-  color: #457B9D;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #6c757d;
+  padding-bottom: 1rem;
 }
 
 .heading span {
-  color: #1D3557;
+  color: #004E98;
 }
 
 .subheading {
   font-size: 0.8rem;
-  color: #457B9D;
+  color: #6c757d;
+  opacity: 80%;
+  padding-bottom: 1rem;
 }
 
 .password-length {
   display: flex;
   justify-content: start;
   align-items: center;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #C0C0C0;
 }
 
 .pass-text {
   font-size: 1.5rem;
-  padding-right: 2rem;
+  padding-right: 6rem;
   color: #1D3557;
 }
 
+#decrease, #increase {
+  padding: .5rem 1rem;
+ }
+
 #length-input {
-  padding: 0.6em 1.5em;
-  margin: 0 0.6rem;
-  background-color: #A8DADC;
+  padding: 0.5rem 1.5rem;
+  margin: 0 0.5rem;
+  background-color: #EBEBEB;
+  border: 2px solid #C0C0C0;
   border-radius: 8px;
 }
 
 .toggle-btns {
   display: flex;
   justify-content: start;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+#generate-btn {
+  padding: 0.5rem 3rem;
 }
 
 #clear {
+  padding: 0.5rem 1rem;
   border-color: #E63946;
   background-color: hsla(355, 78%, 56%, 0.158);
   color: #E63946;
@@ -73,31 +92,34 @@ h1 {
 .passwords {
   display: flex;
   justify-content: space-around;
-  padding: 0;
 }
 
 .passwords input {
-  height: 2rem;
-  width: 14rem;
+  height: 2.5rem;
+  width: 13rem;
   padding: 0 1rem;
   margin: 2rem 0;
   border-radius: 5px;
   border: none;
-  background: #f9f9f9;
+  background: #e9ecef;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+::placeholder {
+  color: #6c757d;
+  font-weight: bold;
+  opacity: .7;
 }
 
 button {
   border-radius: 6px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1D3557;
   color: #F1FAEE;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 
 .copy-btns {
@@ -106,11 +128,64 @@ button {
 }
 
 .copy-btns button {
-  width: 8rem;
-  height: 2rem;
+  padding: 0.5rem 3rem;
   font-size: 0.8rem;
-  border-radius: 3px;
-  padding: 0 0;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .wrapper {
+    max-width: 90vw;
+  }
+
+  .heading {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .subheading {
+    font-size: 0.7rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .pass-text {
+    font-size: 1rem;
+  }
+
+  #decrease, #increase {
+  padding: .2rem .6rem;
+ }
+
+  #length-input {
+    padding: 0.3rem 1rem;
+    margin: 0 0.5rem;
+  }
+
+  #generate-btn {
+    padding: 0.5rem 1.5rem;
+  }
+
+  #clear {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .passwords input {
+    width: 7.5rem;
+    height: 2rem;
+  }
+
+  ::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .copy-btns button {
+    padding: 0.3rem 2.5rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+  }
+  
+
 }
 
 
