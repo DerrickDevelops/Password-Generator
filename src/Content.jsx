@@ -10,10 +10,10 @@ const MainContent = () => {
 		<div className="subheading">
 			<h2>Have a choice of 2 secure passwords to protect your privacy</h2>
 		</div>
-				<div className="passwordlength">
+				<div className="password-length">
 				<h3 className="pass-text">Password length</h3>
 			<button id="decrease" onclick="decrease()">-</button>
-			<span id="lengthinput">0</span>
+			<span id="length-input">0</span>
 			<button id="increase" onclick="increase()">+</button>
 		</div>
 		<div className="toggle-btns">
@@ -22,10 +22,10 @@ const MainContent = () => {
 		</div>
 
 		<div className="passwords">
-			<input type="text" placeholder="password 1" id="password1" readonly />
-			<input type="text" placeholder="password 2" id="password2" readonly />
+			<input type="text" placeholder="Password  #1" id="password1" readonly />
+			<input type="text" placeholder="Password  #2" id="password2" readonly />
 		</div>
-		<div className="copybtn">
+		<div className="copy-btns">
 			<button id="copy1" onclick="copyToClipboardOne()">copy</button>
 			<button id="copy2" onclick="copyToClipboardTwo()">copy</button>
 		</div>
