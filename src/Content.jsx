@@ -29,7 +29,6 @@ const MainContent = () => {
 			<button id="copy1" onclick="copyToClipboardOne()">copy</button>
 			<button id="copy2" onclick="copyToClipboardTwo()">copy</button>
 		</div>
-		<div className="Links"></div>
 		</div>
     )
 }
