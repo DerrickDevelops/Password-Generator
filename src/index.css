@@ -20,7 +20,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background: #EBEBEB;
+  background: #1f2937;
 }
 
 h1 {
@@ -30,12 +30,12 @@ h1 {
 .heading {
   font-size: 1.5rem;
   text-align: left;
-  color: #6c757d;
+  color: #ffffff;
   padding-bottom: 1rem;
 }
 
 .heading span {
-  color: #004E98;
+  color: #4adf86;
 }
 
 .subheading {
@@ -51,17 +51,18 @@ h1 {
   align-items: center;
   padding-bottom: .5rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #C0C0C0;
+  border-bottom: 2px dotted #C0C0C0;
 }
 
 .pass-text {
   font-size: 1.5rem;
   padding-right: 6rem;
-  color: #1D3557;
+  color: #ffffff;
 }
 
 #decrease, #increase {
-  padding: .5rem 1rem;
+  padding: 0.2rem 1rem;
+  font-size: 1.5rem;
  }
 
 #length-input {
@@ -87,6 +88,7 @@ h1 {
   border-color: #E63946;
   background-color: hsla(355, 78%, 56%, 0.158);
   color: #E63946;
+  opacity: 80%;
 }
 
 .passwords {
@@ -117,8 +119,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1D3557;
-  color: #F1FAEE;
+  background: #4adf86;
+	color: #ffffff;
   cursor: pointer;
 }
 
@@ -127,10 +129,13 @@ button {
   justify-content: space-around;
 }
 
-.copy-btns button {
-  padding: 0.5rem 3rem;
-  font-size: 0.8rem;
-  border-radius: 6px;
+#copy1, #copy2 {
+	padding: 5px 24px;
+	font-size: 12px;
+	background: #1f2937;
+	color: #4adf86;
+	border: 2px solid #4adf86;
+	opacity: 0.5;
 }
 
 @media only screen and (max-width: 600px) {
@@ -150,11 +155,14 @@ button {
   }
 
   .pass-text {
-    font-size: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.9rem;
   }
 
   #decrease, #increase {
-  padding: .2rem .6rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 14px;
  }
 
   #length-input {
